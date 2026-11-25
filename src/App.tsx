@@ -25,7 +25,25 @@ export default function App() {
             </Physics>
           </Suspense>
         </Canvas>
-        <Joystick />
+        <Joystick
+          joystickWrapperStyle={{
+            left: 24,
+            bottom: 24,
+            width: 160,
+            height: 160,
+          }}
+          joystickBaseStyle={{
+            width: 160,
+            height: 160,
+            background: 'rgba(255,255,255,0.08)',
+            border: '2px solid rgba(255,255,255,0.4)',
+          }}
+          joystickKnobStyle={{
+            width: 72,
+            height: 72,
+            background: 'rgba(255,255,255,0.85)',
+          }}
+        />
         <ControlsHint />
       </div>
     </KeyboardControls>
